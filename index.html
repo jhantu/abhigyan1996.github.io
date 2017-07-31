@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shooting Game</title>
+    <link href="trystyle.css" rel="stylesheet" /> </head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body ng-app="">
+    
+    <div id="score_div">
+        SCORE: <span id="score">0</span>
+    </div>
+  <div id="name">
+    <h4 style="color:white;margin-top:50%"> ENTER NAME:<br><input style="font-family: papyrus; font-size: 15px" id="inputname" type="text" ng-model="name"></h4>
+  </div>
+    <div id="container">
+      <button class= "w3-button w3-red w3-hover-black w3-border-radius" style="font-size:30px;margin-left:2%; top:80%;position:absolute; border-radius:5px;" id="shoot"> SHOOT</button>
+       <img src="target.png" class="w3-spin" height="150px" width="150px" style="margin-left:85%; top: 26%;position:absolute;" id="target">
+        <div id="line_1" class="line"></div>
+        <div id="line_2" class="line"></div>
+        <div id="line_3" class="line"></div>
+        <p id="displayname" ng-bind="name"></p>
+        <img id="arrow" src="arrow.jpg">
+        <img id="archer" src="archer.jpg" height="300px" width="180px">  
+         <img id="shadow" src="oval.jpg" style="top:56.5%" height="100px" width="100px">   
+        
+        <div id="car_1" class="car">
+            <div class="mouth"></div>
+            <div class="eye_l"></div>
+            <div class="eye_r"></div>
+            <div class="ear_l"></div>
+            <div class="ear_r"></div>
+         
+        </div>
+        <div id="car_2" class="car" >
+            <div class="mouth"></div>
+            <div class="eye_l"></div>
+            <div class="eye_r"></div>
+            <div class="ear_l"></div>
+            <div class="ear_r"></div>
+           
+        </div>
+        <div id="car_3" class="car">
+            <div class="mouth"></div>
+            <div class="eye_l"></div>
+            <div class="eye_r"></div>
+            <div class="ear_l"></div>
+            <div class="ear_r"></div>
+           
+        </div>
+        <div id="car_4" class="car w3-hide-medium w3-hide-small">
+            <div class="mouth"></div>
+            <div class="eye_l"></div>
+            <div class="eye_r"></div>
+            <div class="ear_l"></div>
+            <div class="ear_r"></div>
+           
+        </div>
+        <div id="restart_div">
+            <button class="w3-button" id="restart">
+                Score: <span id="score1"></span>
+                <br> <b>NEW GAME</b>
+            </button>
+        </div>
+    </div>
+    
+
+    <script src="jquery.min.js"></script>
+    <script src="try.js"></script>
+</body>
+
+</html>
