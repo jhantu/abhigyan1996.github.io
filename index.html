@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Shooting Game</title>
+    <title>The Cupid Shooter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="trystyle.css" rel="stylesheet" /> </head>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
@@ -13,20 +14,21 @@
         SCORE: <span id="score">0</span>
     </div>
   <div id="name">
-    <h4 style="color:white;margin-top:50%"> ENTER NAME:<br><input style="font-family: papyrus; font-size: 15px" id="inputname" type="text" ng-model="name"></h4>
+    <h4 style="color:white;margin-top:50%"> ENTER NAME:<br><input style="font-family: papyrus; font-size:70%; margin-right: 2%" id="inputname" type="text" ng-model="name"></h4>
   </div>
     <div id="container">
-      <button class= "w3-button w3-red w3-hover-black w3-border-radius" style="font-size:30px;margin-left:2%; top:80%;position:absolute; border-radius:5px;" id="shoot"> SHOOT</button>
+      <button class= "w3-button w3-red w3-hover-black w3-border-radius" style="font-size:160%;margin-left:2%; top:80%;position:absolute; border-radius:5px;" id="shoot"> SHOOT</button>
        <img src="target.png" class="w3-spin" height="150px" width="150px" style="margin-left:85%; top: 26%;position:absolute;" id="target">
         <div id="line_1" class="line"></div>
         <div id="line_2" class="line"></div>
         <div id="line_3" class="line"></div>
+         <div id="line_4" class="line"></div>
         <p id="displayname" ng-bind="name"></p>
-        <img id="arrow" src="arrow.jpg">
+        <img id="arrow" src="arrow.png">
         <img id="archer" src="archer.jpg" height="300px" width="180px">  
-         <img id="shadow" src="oval.jpg" style="top:56.5%" height="100px" width="100px">   
+        <img id="shadow" src="oval.jpg" style="top:63%" height="20px" width="145px">   
         
-        <div id="car_1" class="car">
+        <div id="car_1" class="car w3-hide-medium">
             <div class="mouth"></div>
             <div class="eye_l"></div>
             <div class="eye_r"></div>

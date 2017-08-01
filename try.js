@@ -12,6 +12,7 @@ $(function() {
     var line_1 = $('#line_1');
     var line_2 = $('#line_2');
     var line_3 = $('#line_3');
+    var line_4 = $('#line_4');
     var restart_div = $('#restart_div');
     var restart_btn = $('#restart');
     var score = $('#score');
@@ -29,15 +30,15 @@ $(function() {
     var score_counter = 1;
     var myscore = 0;
     var speed = 2;
-    var line_speed = 5;
+    var line_speed = 2;
     var move_right = false;
 
     $(document).ready(function(){
       $("#shoot").click(function(){
-        $("#arrow").show("fast")
-        .animate({left:'85%'},450)
+        $("#arrow").show(10)
+        .animate({left:'81%'},450)
         .hide("fast")
-        .animate({left:'150px'})
+        .animate({left:'10%'})
     });
 });   
     $(document).ready(function(){
@@ -49,8 +50,8 @@ $(function() {
 
     $(document).ready(function(){
       $("#shoot").click(function(){
-        $("#shoot").hide(100)
-        .animate({left:'85%'},500)
+        $("#shoot").hide(10)
+        .animate({left:'81%'},500)
         .animate({left:'2%'})
         .show(10);
     });
@@ -96,6 +97,7 @@ var display1 = document.getElementById("score1");
         line_down(line_1);
         line_down(line_2);
         line_down(line_3);
+        line_down(line_4);
 
         anim_id = requestAnimationFrame(hey);
     }
